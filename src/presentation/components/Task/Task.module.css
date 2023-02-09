@@ -1,0 +1,21 @@
+.taskWrapper{
+    padding: 1rem;
+    display: flex;
+    align-items: stretch;
+    min-width: 0;
+    width: 100%;
+    max-width: 100%;
+    color: white;
+    background-color: theme('colors.slate.800');
+    border-radius: theme('borderRadius.lg');
+    gap: 1rem;
+    cursor: pointer;
+}
+.taskWrapper:hover{
+    background-color: theme('colors.slate.700');
+}
+
+.taskWrapper svg {
+    height: inherit;
+    width: inherit;
+}

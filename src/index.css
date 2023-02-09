@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: theme('padding.0');
+}
+
+dialog{
+  margin: theme('margin.0');
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.381);
+  
+}
+
+button, [type='button'], [type='reset'], [type='submit'] {
+  border-radius: theme('borderRadius.md');
+  padding: theme('padding.1') theme('padding.3');
+  background-color: theme('colors.slate.700');
+  color: theme('colors.white');
+}
+button.icon {
+  background-color: theme('colors.transparent');
+  padding: theme('padding[1.5]');
+  height: theme('height.9');
+  width: theme('width.9');
+}
+
+button.icon:hover {
+  background-color: theme('colors.slate.700');
+}
